@@ -1,0 +1,45 @@
+{
+  "name": "npm-lib-starter",
+  "version": "0.0.1",
+  "description": "starter for npm's lib",
+  "main": "./dist/index.js",
+  "keywords": [
+    "starter", "npm", "lib", "library"
+  ],
+  "homepage": "https://github.com/otmjka/npm-lib-starter",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-watch": "webpack --progress --watch",
+    "build": "webpack --progress",
+    "build-min": "webpack --progress",
+    "start": "webpack-dev-server --host 0.0.0.0 --content-base public/ --output-public-path latest/ --hot",
+    "gulp": "./node_modules/.bin/gulp cp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/otmjka/npm-lib-starter.git"
+  },
+  "author": "Dmitriy Trifonov <nindeec@gmail.com> (http://github.com/otmjka)",
+  "bugs": {
+    "url": "https://github.com/otmjka/npm-lib-starter/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "directory-named-webpack-plugin": "^2.2.3",
+    "gulp": "~4.0.0",
+    "jest": "^23.5.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+  },
+  "directories": {
+    "example": "examples"
+  }
+}
